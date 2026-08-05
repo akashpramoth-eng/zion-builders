@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>
+
+ZION BUILDERS | Premium Construction Company
+
+</title>
+
+<meta
+name="description"
+content="ZION BUILDERS delivers premium residential, commercial and industrial construction services with exceptional quality and craftsmanship.">
+
+<meta
+name="keywords"
+content="Construction, Builder, Kerala, Residential, Commercial">
+
+<meta
+name="author"
+content="ZION BUILDERS">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link
+href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+<!-- ================================= -->
+<!-- PRELOADER -->
+<!-- ================================= -->
+
+<div id="loader"
+class="fixed inset-0 bg-gray-950 flex items-center justify-center z-[9999]">
+
+    <div class="text-center">
+
+        <img src="assets/images/logo.png"
+             class="w-28 mx-auto animate-pulse">
+
+        <p class="text-orange-500 mt-6 tracking-[8px] uppercase">
+
+            Loading...
+
+        </p>
+
+    </div>
+
+</div>
+<!-- Header -->
+<header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-3">
+      <img src="assets/images/logo.png" alt="ZION BUILDERS" class="h-14 w-auto">
+      <div class="hidden sm:block">
+        <h1 class="text-white font-extrabold text-xl">ZION BUILDERS</h1>
+        <p class="text-orange-400 text-xs tracking-[3px]">
+          ELEVATING THE PERCEPTION
+        </p>
+      </div>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden lg:flex gap-8 text-white font-medium">
+      <li><a href="#home" class="hover:text-orange-400">Home</a></li>
+      <li><a href="#about" class="hover:text-orange-400">About</a></li>
+      <li><a href="#services" class="hover:text-orange-400">Services</a></li>
+      <li><a href="#projects" class="hover:text-orange-400">Projects</a></li>
+      <li><a href="#contact" class="hover:text-orange-400">Contact</a></li>
+    </ul>
+
+    <!-- CTA -->
+    <a href="#contact"
+       class="hidden lg:inline-block bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-lg text-white font-semibold">
+      Get a Quote
+    </a>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn"
+            class="lg:hidden text-white text-3xl">
+      ☰
+    </button>
+
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+       class="hidden bg-gray-900 text-white px-6 py-6">
+
+    <a href="#home" class="nav-link">Home</a>
+
+<a href="#about" class="nav-link">About</a>
+
+<a href="#services" class="nav-link">Services</a>
+
+<a href="#projects" class="nav-link">Projects</a>
+
+<a href="#contact" class="nav-link">Contact</a>
+/* ==========================
+ACTIVE MENU
+========================== */
+
+const sections=document.querySelectorAll("section");
+
+const navLinks=document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(section=>{
+
+const top=section.offsetTop-120;
+
+if(pageYOffset>=top){
+
+current=section.getAttribute("id");
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.classList.remove("text-orange-500");
+
+if(link.getAttribute("href")==="#"+current){
+
+link.classList.add("text-orange-500");
+
+}
+
+});
+
+});
+
+  </div>
+
+</header>
+<!-- HERO SECTION -->
+<section id="home" class="relative min-h-screen overflow-hidden">
+
+    <!-- Background -->
+    <div class="absolute inset-0">
+        <img src="assets/images/hero.jpg"
+             alt="Construction Site"
+             class="w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-black/70"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center w-full">
+
+            <!-- LEFT CONTENT -->
+            <div>
+
+                <span class="text-orange-400 uppercase tracking-[6px] font-semibold">
+                    Welcome to Zion Builders
+                </span>
+
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-white mt-6 leading-tight">
+
+                    Building
+                    <span class="text-orange-500">Dreams</span>
+
+                    Into Reality
+
+                </h1>
+
+                <p class="text-gray-300 text-lg leading-8 mt-8 max-w-xl">
+
+                    We specialize in residential, commercial,
+                    industrial and renovation projects with
+                    unmatched craftsmanship and precision.
+
+                </p>
+
+                <div class="flex flex-wrap gap-5 mt-10">
+
+                    <a href="#contact"
+                       class="bg-orange-500 px-8 py-4 rounded-lg text-white font-bold hover:bg-orange-600 transition">
+
+                        Request Estimate
+
+                    </a>
+
+                    <a href="#projects"
+                       class="border border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-black transition">
+
+                        View Projects
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT CARD -->
+
+            <div class="hidden lg:block">
+
+                <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8">
+
+                    <h3 class="text-white text-3xl font-bold">
+
+                        Why Choose Us?
+
+                    </h3>
+
+                    <div class="space-y-5 mt-8">
+
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center text-white">
+                                ✓
+                            </div>
+
+                            <span class="text-white">
+                                Premium Quality Materials
+                            </span>
+
+                        </div>
+
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center text-white">
+                                ✓
+                            </div>
+
+                            <span class="text-white">
+                                Experienced Engineers
+                            </span>
+
+                        </div>
+
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center text-white">
+                                ✓
+                            </div>
+
+                            <span class="text-white">
+                                Timely Project Delivery
+                            </span>
+
+                        </div>
+
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center text-white">
+                                ✓
+                            </div>
+
+                            <span class="text-white">
+                                Transparent Pricing
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section><section id="home"
+class="h-screen bg-[url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80')] bg-cover bg-center relative">
+
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto h-full flex items-center px-6">
+
+        <div class="max-w-2xl text-white">
+
+            <p class="uppercase tracking-[5px] text-orange-400 font-semibold">
+                Premium Construction Company
+            </p>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold mt-6 leading-tight">
+                Building the Future with Precision
+            </h1>
+
+            <p class="mt-6 text-lg text-gray-300 leading-8">
+                Residential • Commercial • Industrial • Renovation
+            </p>
+
+            <div class="mt-10 flex flex-wrap gap-4">
+
+                <a href="#contact"
+                   class="bg-orange-500 px-8 py-4 rounded-lg font-bold hover:bg-orange-600 transition">
+                    Request Estimate
+                </a>
+
+                <a href="#projects"
+                   class="border border-white px-8 py-4 rounded-lg hover:bg-white hover:text-black transition">
+                    View Projects
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!-- ============================= -->
+<!-- ABOUT -->
+<!-- ============================= -->
+
+<section id="about" class="bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Images -->
+
+            <div class="relative">
+
+                <img src="assets/images/about.jpg"
+                     alt="About Zion Builders"
+                     class="rounded-3xl shadow-2xl w-full">
+
+                <!-- Experience Card -->
+
+                <div class="absolute -bottom-8 -right-8 bg-orange-500 text-white p-8 rounded-2xl shadow-xl">
+
+                    <h2 class="text-5xl font-black">
+
+                        15+
+
+                    </h2>
+
+                    <p class="uppercase tracking-wider">
+
+                        Years Experience
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Content -->
+
+            <div>
+
+                <span class="uppercase tracking-[5px] text-orange-500 font-semibold">
+
+                    About Us
+
+                </span>
+
+                <h2 class="text-5xl font-extrabold mt-5 leading-tight">
+
+                    Building Excellence Since Day One
+
+                </h2>
+
+                <p class="mt-8 text-gray-600 leading-8">
+
+                    ZION BUILDERS is committed to delivering premium construction
+                    solutions with integrity, innovation, and precision. From
+                    residential homes to commercial and industrial developments,
+                    we focus on quality craftsmanship, safety, and customer
+                    satisfaction at every stage.
+
+                </p>
+
+                <!-- Features -->
+
+                <div class="grid sm:grid-cols-2 gap-6 mt-10">
+
+                    <div class="flex items-start gap-4">
+
+                        <div class="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center">
+
+                            ✓
+
+                        </div>
+
+                        <div>
+
+                            <h4 class="font-bold">
+
+                                Quality Materials
+
+                            </h4>
+
+                            <p class="text-gray-500 text-sm">
+
+                                Premium construction standards.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-start gap-4">
+
+                        <div class="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center">
+
+                            ✓
+
+                        </div>
+
+                        <div>
+
+                            <h4 class="font-bold">
+
+                                Skilled Engineers
+
+                            </h4>
+
+                            <p class="text-gray-500 text-sm">
+
+                                Experienced technical professionals.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-start gap-4">
+
+                        <div class="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center">
+
+                            ✓
+
+                        </div>
+
+                        <div>
+
+                            <h4 class="font-bold">
+
+                                On-Time Delivery
+
+                            </h4>
+
+                            <p class="text-gray-500 text-sm">
+
+                                Efficient planning and execution.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-start gap-4">
+
+                        <div class="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center">
+
+                            ✓
+
+                        </div>
+
+                        <div>
+
+                            <h4 class="font-bold">
+
+                                Client Satisfaction
+
+                            </h4>
+
+                            <p class="text-gray-500 text-sm">
+
+                                Long-term trust and relationships.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <a href="#services"
+                   class="inline-block mt-10 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold transition">
+
+                    Explore Our Services
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!-- ================================= -->
+<!-- SERVICES -->
+<!-- ================================= -->
+
+<section id="services" class="bg-gray-100 py-24">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+
+        <div class="text-center mb-16">
+
+            <span class="uppercase tracking-[5px] text-orange-500 font-semibold">
+                Our Services
+            </span>
+
+            <h2 class="text-5xl font-extrabold mt-4">
+                Construction Solutions You Can Trust
+            </h2>
+
+            <p class="text-gray-600 mt-6 max-w-3xl mx-auto leading-8">
+                We provide complete construction services, from concept and planning
+                to execution and final handover.
+            </p>
+
+        </div>
+
+        <!-- Service Cards -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+            <div class="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+                <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center text-3xl text-white">
+                    🏠
+                </div>
+
+                <h3 class="text-2xl font-bold mt-6">
+                    Residential Construction
+                </h3>
+
+                <p class="text-gray-600 mt-4 leading-7">
+                    Premium villas, apartments, duplex homes, and custom residences
+                    built with quality craftsmanship.
+                </p>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+                <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center text-3xl text-white">
+                    🏢
+                </div>
+
+                <h3 class="text-2xl font-bold mt-6">
+                    Commercial Projects
+                </h3>
+
+                <p class="text-gray-600 mt-4 leading-7">
+                    Office buildings, shopping complexes, hotels, and commercial
+                    developments delivered on time.
+                </p>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+                <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center text-3xl text-white">
+                    🏭
+                </div>
+
+                <h3 class="text-2xl font-bold mt-6">
+                    Industrial Construction
+                </h3>
+
+                <p class="text-gray-600 mt-4 leading-7">
+                    Warehouses, factories, industrial facilities, and infrastructure
+                    built to modern engineering standards.
+                </p>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+                <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center text-3xl text-white">
+                    🔨
+                </div>
+
+                <h3 class="text-2xl font-bold mt-6">
+                    Renovation & Remodeling
+                </h3>
+
+                <p class="text-gray-600 mt-4 leading-7">
+                    Complete interior and exterior renovation solutions that enhance
+                    both functionality and aesthetics.
+                </p>
+
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+                <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center text-3xl text-white">
+                    📐
+                </div>
+
+                <h3 class="text-2xl font-bold mt-6">
+                    Architectural Design
+                </h3>
+
+                <p class="text-gray-600 mt-4 leading-7">
+                    Innovative architectural planning, 3D visualization, and
+                    customized building designs.
+                </p>
+
+            </div>
+
+            <!-- Card 6 -->
+
+            <div class="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-300">
+
+                <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center text-3xl text-white">
+                    👷
+                </div>
+
+                <h3 class="text-2xl font-bold mt-6">
+                    Project Management
+                </h3>
+
+                <p class="text-gray-600 mt-4 leading-7">
+                    End-to-end planning, supervision, budgeting, scheduling, and
+                    quality assurance for every project.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!-- ========================================= -->
+<!-- PROJECTS -->
+<!-- ========================================= -->
+
+<section id="projects" class="py-24 bg-white">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="text-center">
+
+<span class="uppercase tracking-[5px] text-orange-500 font-semibold">
+
+Featured Projects
+
+</span>
+
+<h2 class="text-5xl font-extrabold mt-4">
+
+Our Recent Work
+
+</h2>
+
+<p class="text-gray-600 mt-6 max-w-3xl mx-auto leading-8">
+
+From luxury homes to commercial developments, every project reflects our commitment to quality and innovation.
+
+</p>
+
+</div>
+
+<!-- FILTER BUTTONS -->
+
+<div class="flex flex-wrap justify-center gap-4 mt-14">
+
+<button class="filter-btn active" data-filter="all">
+
+All
+
+</button>
+
+<button class="filter-btn" data-filter="residential">
+
+Residential
+
+</button>
+
+<button class="filter-btn" data-filter="commercial">
+
+Commercial
+
+</button>
+
+<button class="filter-btn" data-filter="industrial">
+
+Industrial
+
+</button>
+
+</div>
+
+<!-- PROJECT GRID -->
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+<!-- PROJECT -->
+
+<div class="project residential rounded-3xl overflow-hidden shadow-lg bg-white">
+
+<img src="assets/images/projects/project1.jpg"
+class="project-image">
+
+<div class="p-7">
+
+<span class="text-orange-500 font-semibold">
+
+Residential
+
+</span>
+
+<h3 class="text-2xl font-bold mt-3">
+
+Luxury Villa
+
+</h3>
+
+<p class="text-gray-500 mt-3">
+
+Location: Kochi
+
+</p>
+
+<p class="text-gray-500">
+
+Timeline: 8 Months
+
+</p>
+
+</div>
+
+</div>
+
+<!-- PROJECT -->
+
+<div class="project commercial rounded-3xl overflow-hidden shadow-lg bg-white">
+
+<img src="assets/images/projects/project2.jpg"
+class="project-image">
+
+<div class="p-7">
+
+<span class="text-orange-500 font-semibold">
+
+Commercial
+
+</span>
+
+<h3 class="text-2xl font-bold mt-3">
+
+Corporate Office
+
+</h3>
+
+<p class="text-gray-500 mt-3">
+
+Location: Chennai
+
+</p>
+
+<p class="text-gray-500">
+
+Timeline: 12 Months
+
+</p>
+
+</div>
+
+</div>
+
+<!-- PROJECT -->
+
+<div class="project industrial rounded-3xl overflow-hidden shadow-lg bg-white">
+
+<img src="assets/images/projects/project3.jpg"
+class="project-image">
+
+<div class="p-7">
+
+<span class="text-orange-500 font-semibold">
+
+Industrial
+
+</span>
+
+<h3 class="text-2xl font-bold mt-3">
+
+Factory Building
+
+</h3>
+
+<p class="text-gray-500 mt-3">
+
+Location: Coimbatore
+
+</p>
+
+<p class="text-gray-500">
+
+Timeline: 16 Months
+
+</p>
+
+</div>
+
+</div>
+
+<!-- PROJECT -->
+
+<div class="project residential rounded-3xl overflow-hidden shadow-lg bg-white">
+
+<img src="assets/images/projects/project4.jpg"
+class="project-image">
+
+<div class="p-7">
+
+<span class="text-orange-500 font-semibold">
+
+Residential
+
+</span>
+
+<h3 class="text-2xl font-bold mt-3">
+
+Modern Residence
+
+</h3>
+
+<p class="text-gray-500 mt-3">
+
+Location: Bangalore
+
+</p>
+
+<p class="text-gray-500">
+
+Timeline: 9 Months
+
+</p>
+
+</div>
+
+</div>
+
+<!-- PROJECT -->
+
+<div class="project commercial rounded-3xl overflow-hidden shadow-lg bg-white">
+
+<img src="assets/images/projects/project5.jpg"
+class="project-image">
+
+<div class="p-7">
+
+<span class="text-orange-500 font-semibold">
+
+Commercial
+
+</span>
+
+<h3 class="text-2xl font-bold mt-3">
+
+Shopping Complex
+
+</h3>
+
+<p class="text-gray-500 mt-3">
+
+Location: Hyderabad
+
+</p>
+
+<p class="text-gray-500">
+
+Timeline: 18 Months
+
+</p>
+
+</div>
+
+</div>
+
+<!-- PROJECT -->
+
+<div class="project industrial rounded-3xl overflow-hidden shadow-lg bg-white">
+
+<img src="assets/images/projects/project6.jpg"
+class="project-image">
+
+<div class="p-7">
+
+<span class="text-orange-500 font-semibold">
+
+Industrial
+
+</span>
+
+<h3 class="text-2xl font-bold mt-3">
+
+Warehouse
+
+</h3>
+
+<p class="text-gray-500 mt-3">
+
+Location: Mumbai
+
+</p>
+
+<p class="text-gray-500">
+
+Timeline: 10 Months
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section><!-- ================================= -->
+<!-- WHY CHOOSE US -->
+<!-- ================================= -->
+
+<section id="why-us" class="bg-gray-900 py-24 text-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+            <!-- LEFT -->
+
+            <div>
+
+                <span class="uppercase tracking-[5px] text-orange-500 font-semibold">
+                    Why Choose ZION BUILDERS
+                </span>
+
+                <h2 class="text-5xl font-extrabold mt-5 leading-tight">
+
+                    We Build More Than
+                    <span class="text-orange-500">Buildings</span>
+
+                </h2>
+
+                <p class="text-gray-300 mt-8 leading-8">
+
+                    Every project is built with precision engineering,
+                    quality materials, experienced professionals,
+                    and a commitment to customer satisfaction.
+
+                </p>
+
+                <div class="space-y-6 mt-10">
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center">
+                            ✓
+                        </div>
+
+                        <span class="text-lg">
+                            Premium Quality Construction
+                        </span>
+
+                    </div>
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center">
+                            ✓
+                        </div>
+
+                        <span class="text-lg">
+                            Experienced Engineers & Architects
+                        </span>
+
+                    </div>
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center">
+                            ✓
+                        </div>
+
+                        <span class="text-lg">
+                            Transparent Pricing
+                        </span>
+
+                    </div>
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center">
+                            ✓
+                        </div>
+
+                        <span class="text-lg">
+                            On-Time Delivery
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div>
+
+                <img
+                src="assets/images/team.jpg"
+                class="rounded-3xl shadow-2xl w-full">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!-- ================================= -->
+<!-- COMPANY STATS -->
+<!-- ================================= -->
+
+<section class="bg-orange-500 py-20">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+
+<div>
+
+<h2 class="counter text-6xl font-black text-white" data-target="15">
+
+0
+
+</h2>
+
+<p class="text-white uppercase tracking-widest mt-3">
+
+Years Experience
+
+</p>
+
+</div>
+
+<div>
+
+<h2 class="counter text-6xl font-black text-white" data-target="250">
+
+0
+
+</h2>
+
+<p class="text-white uppercase tracking-widest mt-3">
+
+Projects Completed
+
+</p>
+
+</div>
+
+<div>
+
+<h2 class="counter text-6xl font-black text-white" data-target="120">
+
+0
+
+</h2>
+
+<p class="text-white uppercase tracking-widest mt-3">
+
+Happy Clients
+
+</p>
+
+</div>
+
+<div>
+
+<h2 class="counter text-6xl font-black text-white" data-target="98">
+
+0
+
+</h2>
+
+<p class="text-white uppercase tracking-widest mt-3">
+
+On-Time %
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section><!-- ================================= -->
+<!-- TESTIMONIALS -->
+<!-- ================================= -->
+
+<section id="testimonials" class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+
+        <div class="text-center">
+
+            <span class="uppercase tracking-[5px] text-orange-500 font-semibold">
+                Testimonials
+            </span>
+
+            <h2 class="text-5xl font-extrabold mt-4">
+                What Our Clients Say
+            </h2>
+
+            <p class="text-gray-600 mt-6 max-w-3xl mx-auto leading-8">
+                We are proud of the relationships we've built and the trust our clients place in us.
+            </p>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div class="grid lg:grid-cols-3 gap-8 mt-16">
+
+            <!-- Card -->
+
+            <div class="bg-gray-50 rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition">
+
+                <div class="text-orange-500 text-2xl mb-6">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-600 leading-8">
+
+                    Zion Builders delivered our dream home exactly as promised. Their professionalism, transparency, and quality exceeded our expectations.
+
+                </p>
+
+                <div class="flex items-center gap-4 mt-8">
+
+                    <img src="https://i.pravatar.cc/80?img=12"
+                         class="w-16 h-16 rounded-full">
+
+                    <div>
+
+                        <h4 class="font-bold">
+                            Rajesh Kumar
+                        </h4>
+
+                        <p class="text-gray-500 text-sm">
+                            Home Owner
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="bg-gray-50 rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition">
+
+                <div class="text-orange-500 text-2xl mb-6">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-600 leading-8">
+
+                    Outstanding project management and timely completion. Highly recommended for commercial construction.
+
+                </p>
+
+                <div class="flex items-center gap-4 mt-8">
+
+                    <img src="https://i.pravatar.cc/80?img=20"
+                         class="w-16 h-16 rounded-full">
+
+                    <div>
+
+                        <h4 class="font-bold">
+                            Anita Joseph
+                        </h4>
+
+                        <p class="text-gray-500 text-sm">
+                            Business Owner
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="bg-gray-50 rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition">
+
+                <div class="text-orange-500 text-2xl mb-6">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-600 leading-8">
+
+                    Excellent workmanship and attention to detail. The team was responsive throughout the entire project.
+
+                </p>
+
+                <div class="flex items-center gap-4 mt-8">
+
+                    <img src="https://i.pravatar.cc/80?img=45"
+                         class="w-16 h-16 rounded-full">
+
+                    <div>
+
+                        <h4 class="font-bold">
+                            David Thomas
+                        </h4>
+
+                        <p class="text-gray-500 text-sm">
+                            Property Developer
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!-- ================================= -->
+<!-- TRUSTED PARTNERS -->
+<!-- ================================= -->
+
+<section class="py-20 bg-gray-100">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <h2 class="text-4xl font-bold">
+                Trusted Partners
+            </h2>
+
+            <p class="text-gray-600 mt-4">
+                We work with leading brands and suppliers.
+            </p>
+
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-14">
+
+            <div class="bg-white rounded-xl h-24 flex items-center justify-center font-bold text-gray-400 shadow">
+                UltraTech
+            </div>
+
+            <div class="bg-white rounded-xl h-24 flex items-center justify-center font-bold text-gray-400 shadow">
+                ACC
+            </div>
+
+            <div class="bg-white rounded-xl h-24 flex items-center justify-center font-bold text-gray-400 shadow">
+                TATA Steel
+            </div>
+
+            <div class="bg-white rounded-xl h-24 flex items-center justify-center font-bold text-gray-400 shadow">
+                JK Cement
+            </div>
+
+            <div class="bg-white rounded-xl h-24 flex items-center justify-center font-bold text-gray-400 shadow">
+                Asian Paints
+            </div>
+
+            <div class="bg-white rounded-xl h-24 flex items-center justify-center font-bold text-gray-400 shadow">
+                Kajaria
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!-- ================================= -->
+<!-- CONTACT -->
+<!-- ================================= -->
+
+<section id="contact" class="py-24 bg-gray-900 text-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center">
+
+            <span class="uppercase tracking-[5px] text-orange-500 font-semibold">
+                Contact Us
+            </span>
+
+            <h2 class="text-5xl font-extrabold mt-4">
+                Request a Free Quote
+            </h2>
+
+            <p class="text-gray-400 mt-6 max-w-2xl mx-auto">
+                Tell us about your project and our team will contact you shortly.
+            </p>
+
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 mt-16">
+
+            <!-- FORM -->
+
+            <div class="bg-white rounded-3xl p-10 text-gray-800">
+
+                <form id="contactForm" class="space-y-6">
+
+                    <input
+                        id="name"
+                        type="text"
+                        placeholder="Full Name"
+                        class="w-full border rounded-xl px-5 py-4">
+
+                    <input
+                        id="phone"
+                        type="tel"
+                        placeholder="Phone Number"
+                        class="w-full border rounded-xl px-5 py-4">
+
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="Email Address"
+                        class="w-full border rounded-xl px-5 py-4">
+
+                    <select
+                        id="service"
+                        class="w-full border rounded-xl px-5 py-4">
+
+                        <option>Residential Construction</option>
+                        <option>Commercial Construction</option>
+                        <option>Industrial Construction</option>
+                        <option>Renovation</option>
+                        <option>Architecture</option>
+
+                    </select>
+
+                    <textarea
+                        id="message"
+                        rows="6"
+                        placeholder="Project Details"
+                        class="w-full border rounded-xl px-5 py-4 resize-none"></textarea>
+
+                    <button
+                        class="w-full bg-orange-500 hover:bg-orange-600 transition text-white font-bold py-4 rounded-xl">
+
+                        Request Estimate
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- CONTACT INFO -->
+
+            <div>
+
+                <div class="space-y-8">
+
+                    <div>
+
+                        <h3 class="text-3xl font-bold">
+
+                            ZION BUILDERS
+
+                        </h3>
+
+                        <p class="text-gray-400 mt-4 leading-8">
+
+                            Elevating the Perception through quality construction,
+                            innovation and customer satisfaction.
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-xl text-orange-500">
+
+                            📍 Address
+
+                        </h4>
+
+                        <p class="text-gray-300 mt-2">
+
+                            Your Office Address<br>
+                            Kochi, Kerala
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-xl text-orange-500">
+
+                            📞 Phone
+
+                        </h4>
+
+                        <p class="text-gray-300 mt-2">
+
+                            +91 XXXXX XXXXX
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-xl text-orange-500">
+
+                            ✉ Email
+
+                        </h4>
+
+                        <p class="text-gray-300 mt-2">
+
+                            info@zionbuilders.in
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-xl text-orange-500">
+
+                            🕒 Office Hours
+
+                        </h4>
+
+                        <p class="text-gray-300 mt-2">
+
+                            Monday - Saturday<br>
+
+                            9:00 AM - 6:00 PM
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section><section>
+
+<iframe
+
+src="https://www.google.com/maps?q=Kochi&output=embed"
+
+class="w-full h-[450px] border-0"
+
+loading="lazy">
+
+</iframe>
+
+</section><footer class="bg-black text-gray-400 py-14">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid lg:grid-cols-4 gap-10">
+
+<div>
+
+<img src="assets/images/logo.png" class="w-24">
+
+<h3 class="text-white text-2xl font-bold mt-5">
+
+ZION BUILDERS
+
+</h3>
+
+<p class="mt-4">
+
+Elevating the Perception.
+
+</p>
+
+</div>
+
+<div>
+
+<h4 class="text-white font-bold mb-5">
+
+Quick Links
+
+</h4>
+
+<ul class="space-y-3">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4 class="text-white font-bold mb-5">
+
+Services
+
+</h4>
+
+<ul class="space-y-3">
+
+<li>Residential</li>
+
+<li>Commercial</li>
+
+<li>Industrial</li>
+
+<li>Renovation</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4 class="text-white font-bold mb-5">
+
+Follow Us
+
+</h4>
+
+<div class="flex gap-4 text-2xl">
+
+<a href="#">📘</a>
+
+<a href="#">📷</a>
+
+<a href="#">💼</a>
+
+</div>
+
+</div>
+
+</div>
+
+<hr class="border-gray-800 my-10">
+
+<div class="flex flex-col md:flex-row justify-between">
+
+<p>
+
+© <span id="year"></span> ZION BUILDERS.
+All Rights Reserved.
+
+</p>
+
+<p>
+
+Designed by ZION BUILDERS
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+<script src="assets/js/script.js"></script>
+<a href="https://wa.me/919999999999"
+   target="_blank"
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl text-3xl z-50">
+
+💬
+
+</a>
+<button id="topBtn"
+class="fixed bottom-24 right-6 hidden bg-orange-500 hover:bg-orange-600 text-white w-14 h-14 rounded-full shadow-xl transition">
+
+↑
+
+</button>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+
+duration:900,
+
+once:true,
+
+offset:120
+
+});
+</script><div data-aos="fade-up">
+
+...
+
+</div>
+</body>
+</html>
