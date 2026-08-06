@@ -1,0 +1,128 @@
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f8fafc;
+}
+
+.section-title{
+    font-size:3rem;
+    font-weight:800;
+}
+
+.shadow-soft{
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+}
+
+.glass{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.btn-primary{
+    background:#f97316;
+    color:white;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:#ea580c;
+}
+
+img{
+    user-select:none;
+}
+
+section{
+    padding:100px 0;
+}
+/* Service Card Animation */
+
+.service-card{
+    transition:all .35s ease;
+}
+
+.service-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 50px rgba(0,0,0,.15);
+}
+/* ==========================
+PROJECTS
+========================== */
+
+.filter-btn{
+
+padding:12px 26px;
+
+border-radius:999px;
+
+background:white;
+
+font-weight:600;
+
+transition:.3s;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.filter-btn:hover{
+
+background:#f97316;
+
+color:white;
+
+}
+
+.filter-btn.active{
+
+background:#f97316;
+
+color:white;
+
+}
+
+.project{
+
+transition:.35s;
+
+}
+
+.project:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 30px 60px rgba(0,0,0,.15);
+
+}
+
+.project-image{
+
+height:260px;
+
+width:100%;
+
+object-fit:cover;
+
+transition:.6s;
+
+}
+
+.project:hover .project-image{
+
+transform:scale(1.08);
+
+}
+/* Testimonials */
+
+.testimonial-card{
+    transition:all .35s ease;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+}
