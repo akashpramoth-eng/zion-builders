@@ -175,13 +175,13 @@ color:#111827;
 
 #navMenu a:hover{
 
-color:#D4AF37;
+color:#F37032;
 
 }
 
 .quote-btn{
 
-background:#D4AF37;
+background:#F37032;
 padding:13px 28px;
 border-radius:999px;
 color:#111827!important;
@@ -282,7 +282,7 @@ z-index:2;
 
 .hero-text span{
 
-color:#D4AF37;
+color:#F37032;
 font-weight:700;
 letter-spacing:4px;
 
@@ -316,7 +316,7 @@ margin-top:45px;
 
 .primary-btn{
 
-background:#D4AF37;
+background:#F37032;
 padding:18px 35px;
 border-radius:999px;
 font-weight:700;
@@ -360,7 +360,7 @@ STATS
 .stats-grid h2{
     font-size:60px;
     font-weight:800;
-    color:#D4AF37;
+    color:#F37032;
 }
 
 .stats-grid p{
@@ -426,12 +426,12 @@ PROJECTS
 }
 
 .filter-btn:hover{
-    background:#D4AF37;
+    background:#F37032;
     color:#111827;
 }
 
 .filter-btn.active{
-    background:#D4AF37;
+    background:#F37032;
     color:#111827;
 }
 
@@ -473,7 +473,7 @@ footer a{
 }
 
 footer a:hover{
-    color:#D4AF37;
+    color:#F37032;
 }
 
 footer i{
@@ -482,7 +482,7 @@ footer i{
 
 footer i:hover{
     transform:translateY(-4px);
-    color:#D4AF37;
+    color:#F37032;
 }
 
 /* ==========================================

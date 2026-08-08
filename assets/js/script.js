@@ -88,11 +88,11 @@ window.addEventListener("scroll", () => {
 
     navLinks.forEach(link => {
 
-        link.classList.remove("text-[#D4AF37]");
+        link.classList.remove("text-[#F37032]");
 
         if (link.getAttribute("href") === "#" + current) {
 
-            link.classList.add("text-[#D4AF37]");
+            link.classList.add("text-[#F37032]");
 
         }
 
