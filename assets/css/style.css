@@ -519,14 +519,20 @@ footer i:hover{
 BACK TO TOP
 ========================================== */
 
-#backToTop{
-    transition:.35s;
+#backToTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    line-height: 1 !important;
 }
 
-#backToTop:hover{
-    transform:translateY(-5px);
+#backToTop i {
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
 }
-
 /* ==========================================
 WHATSAPP
 ========================================== */
@@ -656,7 +662,13 @@ header.scrolled #menuBtn{
             rgba(66, 54, 58, 0.90) 100%
         );
     }
-
+ #scrollTop {
+        width: 52px;
+        height: 52px;
+        right: 18px;
+        bottom: 18px;
+        font-size: 20px;
+    }
 }
  
 
